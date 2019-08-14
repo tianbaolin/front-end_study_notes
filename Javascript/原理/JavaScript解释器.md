@@ -108,7 +108,9 @@ js代码块通过语法分析阶段后，语法正确则进入预编译阶段。
 
 ####浏览器多线程
 
-<img src="./brower_thred.jpg" width="200px"/><img src="./event_loop.jpg" width="300px"/>
+<img src="./brower_thred.jpg" width="200px"/>
+
+<img src="./event_loop.jpg" width="300px"/>
 
 GUI渲染线程
 
