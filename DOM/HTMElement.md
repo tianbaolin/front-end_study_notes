@@ -1,0 +1,25 @@
+1. Element原型链
+   - HTMLDivElement =>
+   - HTMLElement=>
+   - Element=>
+   - Node=>
+   - EventTarget=>
+   - Object
+2. 属性
+   * [`HTMLElement.contentEditable`](https://developer.mozilla.org/zh-CN/docs/Web/API/HTMLElement/contentEditable)
+   * [`HTMLElement.isContentEditable`](https://developer.mozilla.org/zh-CN/docs/Web/API/HTMLElement/isContentEditable) 
+   * [`HTMLElement.contextMenu`](https://developer.mozilla.org/zh-CN/docs/Web/API/HTMLElement/contextMenu)
+   * [`HTMLElement.dataset`](https://developer.mozilla.org/zh-CN/docs/Web/API/HTMLElement/dataset)
+   * [`HTMLElement.hidden`](https://developer.mozilla.org/zh-CN/docs/Web/API/HTMLElement/hidden)
+   * [`HTMLElement.offsetHeight`](https://developer.mozilla.org/zh-CN/docs/Web/API/HTMLElement/offsetHeight) 
+   * [`HTMLElement.offsetLeft`](https://developer.mozilla.org/zh-CN/docs/Web/API/HTMLElement/offsetLeft)
+   * [`HTMLElement.offsetParent`](https://developer.mozilla.org/zh-CN/docs/Web/API/HTMLElement/offsetParent)
+   * [`HTMLElement.offsetTop`](https://developer.mozilla.org/zh-CN/docs/Web/API/HTMLElement/offsetTop)
+   * [`HTMLElement.offsetWidth`](https://developer.mozilla.org/zh-CN/docs/Web/API/HTMLElement/offsetWidth)
+   * [`HTMLElement.style`](https://developer.mozilla.org/zh-CN/docs/Web/API/HTMLElement/style)
+   * [`HTMLElement.title`](https://developer.mozilla.org/zh-CN/docs/Web/API/HTMLElement/title)
+3. 方法
+   * [`HTMLElement.blur()`](https://developer.mozilla.org/zh-CN/docs/Web/API/HTMLElement/blur)
+   * [`HTMLElement.click()`](https://developer.mozilla.org/zh-CN/docs/Web/API/HTMLElement/click)
+   * [`HTMLElement.focus()`](https://developer.mozilla.org/zh-CN/docs/Web/API/HTMLElement/focus)
+   * [`HTMLElement.forceSpellCheck()`](https://developer.mozilla.org/zh-CN/docs/Web/API/HTMLElement/forceSpellCheck) 

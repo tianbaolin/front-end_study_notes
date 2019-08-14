@@ -1,0 +1,5 @@
+**DocumentFragment，文档片段**接口，表示一个没有父级文件的最小文档对象。它被作为一个轻量版的 [`Document`](https://developer.mozilla.org/zh-CN/docs/Web/API/Document) 使用，用于存储已排好版的或尚未打理好格式的XML片段。最大的区别是因为 DocumentFragment 不是真实DOM树的一部分，它的变化不会触发 DOM 树的（[重新渲染](https://developer.mozilla.org/en-US/docs/Glossary/reflow)) ，且不会导致性能等问题。
+
+最常用的方法是使用文档片段作为参数（例如，任何 [`Node`](https://developer.mozilla.org/zh-CN/docs/Web/API/Node) 接口类似 [`Node.appendChild`](https://developer.mozilla.org/zh-CN/docs/Web/API/Node/appendChild) 和 [`Node.insertBefore`](https://developer.mozilla.org/zh-CN/docs/Web/API/Node/insertBefore)) 的方法），这种情况下被添加(append)或被插入(inserted)的是片段的所有子节点, 而非片段本身。因为所有的节点会被一次插入到文档中，而这个操作仅发生一个重渲染的操作，而不是每个节点分别被插入到文档中，因为后者会发生多次重渲染的操作。
+
+该接口在Web组件中也非常有用: [模板](https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/template) 元素在其 [`HTMLTemplateElement.content`](https://developer.mozilla.org/zh-CN/docs/Web/API/HTMLTemplateElement/content) 属性中包含了一个 `DocumentFragment 。`
