@@ -1,4 +1,25 @@
-1. then 方法返回值
+1. 原理
+
+   Promises/A+规范
+
+   **`onFulfilled` 和 `onRejected` 只有在[执行环境](http://es5.github.io/#x10.3)堆栈仅包含**平台代码**时才可被调用**。
+
+   意味着不能同步执行，只能在事件循环的消息队列中排队等待执行。模拟无法直接创建微任务，可以使用setTimeout模拟
+
+2. 模拟主要功能（5个）
+
+   * Promise捕获错误与 try catch 等同
+   * Promise 方法中的回调函数是异步的（实现resolve与reject函数，异步调用then中传入的回调函数）
+   * Promise 方法每次都返回一个新的Promise
+   * Promise 拥有状态变化
+   * Promise 会存储返回值（回调函数参数出入）
+
+   其主要使用了设计模式中的观察者模式：
+
+   1. 通过Promise.prototype.then和Promise.prototype.catch方法将观察者方法注册到被观察者Promise对象中，同时返回一个新的Promise对象，以便可以链式调用。
+   2. 被观察者管理内部pending、fulfilled和rejected的状态转变，同时通过构造函数中传递的resolve和reject方法以主动触发状态转变和通知观察者。
+
+3. then 方法返回值
 
 ```
 1. 如果then中的回调函数返回一个值，那么then返回的Promise将会成为接受状态，并且将返回的值作为接受状态的回调函数的参数值。

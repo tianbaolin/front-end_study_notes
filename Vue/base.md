@@ -104,10 +104,44 @@
 7. 指令
 
    * v-if
+   
+   * v-else
+   
+   * v-else-if
+   
    * v-show
+   
    * v-for
+   
    * v-html
+   
+   * v-text
+   
    * v-bind
-   *  v-once 
+   
+   * v-once 
+   
    * v-model
+   
    * v-on
+   
+   * v-slot
+   
+   * v-pre
+   
+   * v-cloak
+   
+     ```vue
+     // html 中 插值未渲染前会闪现,加入v-cloak 指令与[v-cloak]属性选择器可以解决
+     // html
+     <div id="app" v-cloak>
+         {{msg}}
+     </div>
+     // c s s
+     [v-cloak] {
+       display: none;
+     }
+     
+     ```
+   
+     

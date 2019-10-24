@@ -30,7 +30,7 @@
 
 3. **Etag/ If-None-Match**（弱缓存）
 
-   服务器端返回字段 Etag： xxxx (一般为md5值) 对应客户端匹 配字段为If-None-Match: w/xxx(xxx的值和上面的etag的xxx一样则返回304，否则返回修改后的资源)。优先级高于
+   服务器端返回字段 Etag： xxxx (一般为md5值) 对应客户端匹 配字段为If-None-Match: w/xxx(xxx的值和上面的etag的xxx一样则返回304，否则返回修改后的资源)。优先级高于If-Modified-Since
 
 4. **Last-Modified/If-Modified-Since**（弱缓存）
 
