@@ -49,3 +49,14 @@ sudo n stable // 升级到稳定版本
 sudo n xx.xx // 升级到具体版本号
 ```
 
+### 4. 源管理nrm
+
+```shell
+npm install nrm -g
+nrm test
+nrm ls
+nrm use cnpm
+```
+
+
+
